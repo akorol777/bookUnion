@@ -1,0 +1,93 @@
+$border: #e7e7e7
+$text-hover: #b90800
+/*-----header----------------------------------------*/
+body
+	height: 3000px//KILL
+	font-family: "OpenSans", sans-serif
+a
+	+transition (0.3s)	
+.header
+.header-in
+	//background: #456
+	margin: 0 auto
+	width: 950px 	
+	border-bottom: 2px solid $border
+	padding-bottom: 26px 
+	+clr
+.header__left
+	float: left
+	padding-top: 17px 
+.header__right
+	width: 310px
+	float: right
+	padding-top: 25px 		
+.header__top
+	+clr	
+	margin-bottom: 24px
+.lang
+	padding-top: 8px
+	font-size: 11px
+	line-height: 11px
+	float: left	
+	+clr	
+	li
+		float: right
+		margin-right: 23px
+	a	
+		text-decoration: none
+		color: #191919 
+		border-bottom: 3px solid transparent 
+		padding-bottom: 4px
+		&:hover
+			color: $text-hover	
+	.is-active
+		font-weight: bold	
+		border-bottom: 3px solid red 		
+		&:hover
+			color: #191919
+			cursor: default 
+.official
+	float: right	
+	font-size: 14px
+	line-height: 14px
+	color: #4f555d 
+.header__bottom	
+	+clr
+.search
+	border-bottom: 1px solid $border
+	width: 100% 
+	padding: 4px 0px 3px 
+	+clr 
+	.i-search
+		float: right
+.search__input
+	font-size: 12px
+	line-height: 12px
+	width: 285px
+	color: #4f555d 
+	border: none
+	outline: none	
+/*-----nav----------------------------------------*/
+/*-----main----------------------------------------*/
+/*-----footer----------------------------------------*/
+/*-----logo----------------------------------------*/
+.logo
+	background: url(../img/logo.png) no-repeat 
+	display: inline-block
+	height: 77px
+	width: 256px
+	+hide-text
+	vertical-align: top
+/*-----ico----------------------------------------*/
+.ico
+	display: inline-block
+.i-pegas
+	+s(i-pegas)	
+	margin-right: 12px 
+.i-search
+	+s(i-search)
+	&:hover
+		+s(i-search_active)
+		cursor: pointer
+		
+	
