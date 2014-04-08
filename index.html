@@ -7,10 +7,12 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/app.js"></script>
+	<script src="js/common.js"></script>	
 </head>
-<body>
-	<header class="header">
-		<div class="header-in">
+<body onload="clickMenu('menu')">
+	<!--BEGIN header-->
+	<div class="wrap">
+		<header class="header-in">
 			<div class="header__left">
 				<a href="#" class="logo">Российский Книжный Союз</a>
 			</div>
@@ -29,12 +31,114 @@
 					</div>	
 				</div>	
 			</div>
-		</div>
-	</header>
-	<nav class="nav">nav</nav>
+		</header>
+	</div>
+	<!--/.header-->
+	<!--BEGIN nav-->
+	<div class="wrap">	
+		<ul id="menu" class="nav">
+			<li class="nav__item">О нас
+				<ul>
+					<li class="nav__item-unit">
+						<a href="#">Уставные документы</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Состав членов РКС</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Органы управления</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Структура РКС</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Реквизиты</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav__item">Вступление в РКС
+				<ul>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav__item">Мероприятия РКС
+				<ul>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav__item">Проекты РКС
+				<ul>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav__item">Партнеры
+				<ul>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+				</ul>
+			</li>		
+			<li class="nav__item">Контакты
+				<ul>
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li class="nav__item-unit">
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li class="nav__item-unit">
+					<li class="nav__item-unit">
+						<a href="#">Подпункт</a>
+					</li>
+				</ul>
+			</li>					
+		</ul>
+	</div>
+	<!--/.nav-->	
 	<div class="main">main</div>
+	<!--BEGIN footer-->		
 	<footer class="footer">footer</footer>
-
-
+	<!--/.nav-->
 </body>
 </html>
