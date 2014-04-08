@@ -2,7 +2,6 @@ $border: #e7e7e7
 $text-hover: #b90800
 /*-----header----------------------------------------*/
 body
-	height: 3000px//KILL
 	font-family: "OpenSans", sans-serif
 a
 	+transition (0.3s)	
@@ -10,10 +9,8 @@ a
 	display: block
 	+clr
 .header-in
-	//background: #456
 	margin: 0 auto
 	width: 950px 	
-	//border-bottom: 2px solid $border
 	padding-bottom: 26px 
 	+clr
 .header__left
@@ -134,7 +131,76 @@ a
 		&:hover
 			color: #a8abad		
 /*-----main----------------------------------------*/
+.main
+	height: 1000px//KILL	
 /*-----footer----------------------------------------*/
+.footer
+	background: #353C44 
+.footer-in
+	background: #353C44
+	margin: 0 auto
+	width: 960px
+	padding: 57px 16px 60px 0px
+	+clr
+	+box
+.footer__left
+	float: left
+	margin-right: 65px
+.footer__logo
+	display: inline-block
+	height: 52px
+	width: 49px	
+	background: url(../img/icons/i-logo_footer.png) 
+	vertical-align: top
+.footer__text
+	margin: 0px 0 0 15px 
+	display: inline-block
+	width: 230px
+	+opacity(.9)
+	color: #b7b9bb
+	font-size: 13px
+	line-height: 18px 
+.footer__right
+	float: right
+.develop
+	margin-top: 4px
+.develop__text
+	display: inline-block
+	+opacity(.8)
+	color: #b7b9bb
+	font-size: 12px
+	line-height: 12px
+	vertical-align: top
+	margin: 2px 6px 0 0  
+.develop__logo
+	display: inline-block
+	vertical-align: top
+	background: url(../img/icons/i-logo_develop.png)
+	height: 19px
+	width: 68px 	
+.footer__center
+	float: left	
+.footer__links
+	+clr	
+.footer__item
+	float: left
+	margin-right: 50px
+.footer__item-unit	
+	margin-bottom: 7px
+	a
+		text-decoration: none
+		+opacity(.9)
+		color: #f7f7f7
+		font-size: 11px
+		line-height: 11px
+		&:active
+			color: #8e9298
+		&:hover
+			color: #a8adb2
+	
+
+
+
 /*-----logo----------------------------------------*/
 .logo
 	background: url(../img/logo.png) no-repeat 
