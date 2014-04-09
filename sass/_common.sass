@@ -89,6 +89,7 @@ a
 		&:hover
 			background: #2a2a2a
 			color: #FFF	
+			z-index: 999
 .nav__item
 	+transition(0.3s)									
 	float: left
@@ -98,7 +99,7 @@ a
 	color: #313131
 	font-size: 14px
 	line-height: 20px
-	padding: 19px 26px 18px 21px 
+	padding: 19px 26px 16px 21px 
 	text-decoration: none
 	text-align: left
 	cursor: pointer
@@ -197,10 +198,99 @@ a
 			color: #8e9298
 		&:hover
 			color: #a8adb2
-	
-
-
-
+/*-----slider----------*/
+.slider
+	.slider__prev, .slider__next
+		position: absolute
+		top: 187px
+		cursor: pointer	
+		z-index: 111
+	.slider__prev
+		left: 12.5%
+		+s(i-slider_prev)
+		&:hover
+			+s(i-slider_prev-h)	
+		&:active
+			+s(i-slider_prev-a)					
+	.slider__next
+		right: 12.5%
+		+s(i-slider_next)
+		&:hover
+			+s(i-slider_next-h)
+		&:active
+			+s(i-slider_next-a)						
+.slider__pager
+	position: absolute
+	bottom: 28px
+	left: 50%
+	margin-left: -31px 
+	z-index: 111
+	span
+		margin-right: 11px
+		display: inline-block
+		width: 6px
+		height: 6px
+		background: transparent
+		+border-radius(50%)
+		font-size: 0
+		cursor: pointer
+		border: 1px solid #f7f7f7
+		@include box-shadow(inset 0 2px 2px rgba(0,0,0,.18))
+		&.cycle-pager-active
+			background: #f7f7f7 
+			@include box-shadow(none)
+		&:hover
+			background: #f7f7f7
+		&:active
+			background: #EF2E24 
+			border: 1px solid #ef2e24	 	
+.slider-i
+	margin: 0 auto
+	position: relative
+	+box
+	+cover
+.slider__item-1
+	background: #75787c url(../img/slide1.png)
+.slider__item-2
+	background: #75787c url(../img/slide2.png)
+.slider__item-3
+	background: #75787c url(../img/slide3.jpg)	 
+.slider__item-4
+	background: #75787c url(../img/slide4.jpg) 	
+.slider__item
+	display: inline-block
+	height: 418px
+	width: 100%	
+	+cover
+.slider__content
+	width: 580px
+	margin: 0 auto 
+	padding: 99px 0px 0px 3px 
+	.i-book
+		display: block
+		margin: 0 auto 0px 
+.slider__content-title
+	color: #FFF
+	font-size: 47px
+	line-height: 39px
+	text-align: center
+	font-weight: normal
+	margin: 24px 0 20px 
+	text-decoration: none
+	display: block
+	cursor: pointer
+	&:hover
+		text-decoration: underline
+	&:active
+		color: #dedede 	 
+.slider__content-text
+	+opacity(.96)
+	color: #f7f7f7
+	font-size: 14px
+	line-height: 17px
+	width: 370px
+	text-align: center
+	margin: 0 auto 0 		
 /*-----logo----------------------------------------*/
 .logo
 	background: url(../img/logo.png) no-repeat 
@@ -220,5 +310,7 @@ a
 	&:hover
 		+s(i-search_active)
 		cursor: pointer
+.i-book
+	+s(i-book)		
 		
 	

@@ -8,10 +8,12 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/app.js"></script>
 	<script src="js/common.js"></script>	
+	<script src="js/jquery.js"></script>
+	<script src="js/cycle.js"></script>	
 </head>
 <body onload="clickMenu('menu')">
-	<!--BEGIN header-->
 	<div class="wrap">
+		<!--BEGIN header-->
 		<header class="header-in">
 			<div class="header__left">
 				<a href="#" class="logo">Российский Книжный Союз</a>
@@ -32,10 +34,10 @@
 				</div>	
 			</div>
 		</header>
+		<!--/.header-->
 	</div>
-	<!--/.header-->
-	<!--BEGIN nav-->
 	<div class="wrap">	
+		<!--BEGIN nav-->
 		<ul id="menu" class="nav">
 			<li class="nav__item">О нас
 				<ul>
@@ -134,8 +136,55 @@
 				</ul>
 			</li>					
 		</ul>
+		<!--/.nav-->
+	</div>	
+
+	<!-- BEGIN slider -->
+	<div class="slider">
+		<div class="slider-i">
+			<div class="cycle-slideshow"
+			data-cycle-slides="> .slider__item"
+			data-cycle-pager=".slider__pager"
+			data-cycle-prev=".slider__prev"
+			data-cycle-next=".slider__next"
+			data-pause-on-hover="true"
+			>
+				<div class="slider__item slider__item-1">
+					<div class="slider__content">
+						<i class="ico i-book"></i>
+						<a href="#" class="slider__content-title">Региональная программа поддержки<br> и развития чтения</a>
+						<div class="slider__content-text">Российский книжный союз<br> начинает принимать учебники и учебную литературу на общественную экспертизу</div>
+					</div>
+				</div>
+				<div class="slider__item slider__item-2">
+					<div class="slider__content">
+						<i class="ico i-book"></i>
+						<div class="slider__content-title">Методы, используемые для печати</div>
+						<div class="slider__content-text">Страницы последовательно напечатываются на рулонной бумаге, которая впоследствии разделяется на отдельные листы, таким образом, что в итоге книга сразу будет собрана в правильном порядке. </div>
+					</div>
+				</div>
+				<div class="slider__item slider__item-3">
+					<div class="slider__content">
+						<i class="ico i-book"></i>
+						<div class="slider__content-title">Современная печать</div>
+						<div class="slider__content-text">В зависимости от конкретного типа книги применяется бумага определённого качества; наиболее распространённой разновидностью является мелованная бумага того или иного сорта.</div>
+					</div>
+				</div>
+				<div class="slider__item slider__item-4">
+					<div class="slider__content">
+						<i class="ico i-book"></i>
+						<div class="slider__content-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+						<div class="slider__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, quidem, earum, eius, aliquid nostrum cupiditate necessitatibus iure laudantium maiores itaque quos maxime deserunt ratione exercitationem accusantium consequatur molestiae ad amet.</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider__pager"></div>
+			<i class="slider__prev"></i>
+			<i class="slider__next"></i>
+		</div>
 	</div>
-	<!--/.nav-->	
+	<!-- / .slider -->
+
 	<div class="main">main</div>
 	<!--BEGIN footer-->		
 	<footer class="footer">
