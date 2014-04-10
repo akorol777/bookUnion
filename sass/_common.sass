@@ -1,6 +1,5 @@
 $border: #e7e7e7
 $text-hover: #b90800
-/*-----header----------------------------------------*/
 body
 	font-family: "OpenSans", sans-serif
 	color: #838383
@@ -11,7 +10,11 @@ a
 	+clr
 .text
 	font-size: 12px
-	line-height: 17px 	
+	line-height: 17px 
+/*-----header----------------------------------------*/
+.header		
+	display: block
+	+clr
 .header-in
 	margin: 0 auto
 	width: 950px 	
@@ -137,17 +140,21 @@ a
 			color: #a8abad		
 /*-----main----------------------------------------*/
 .main
+	display: block
+	+clr
+.main-in
 	width: 950px
-	height: 1000px//KILL
 	margin: 0 auto 
 	padding-top: 44px
+	padding-bottom: 19px
 	+clr
+	border-bottom: 2px solid #e4e4e4 
 .main__left
 	float: left
 	display: inline-block
 	width: 630px
-	height: 500px//KILL
-.topper
+	
+.main__topper
 	border-top: 2px solid #e4e4e4 
 	padding-top: 27px
 	margin-bottom: 27px
@@ -159,10 +166,34 @@ a
 		line-height: 31px
 		.i-link
 			margin-right: 10px	
+.main__block
+	margin-bottom: 22px			
 .block
 	+box-shadow (inset 0px 1px 0px 0px #e4e4e4)
 	+clr
 	margin-bottom: 7px
+.block-mini
+	position: relative
+	.img
+		height: 110px
+		width: 110px
+		&:before
+			position: absolute
+			content: ""
+			top: 50px
+			right: 0px
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 7.5px 5px 7.5px 0
+			border-color: transparent #fff transparent transparent
+	.block__right
+		padding: 19px 20px 0 0 
+		width: 177px
+	.data
+		position: absolute
+		bottom: 22px
+		left: 132px 		
 .block__right
 	float: right
 	width: 412px
@@ -172,8 +203,7 @@ a
 	.link-blue
 		margin-bottom: 7px
 	.link3
-		margin-bottom: 19px	
-		
+		margin-bottom: 19px
 .img
 	display: inline-block
 	height: 187px
@@ -182,48 +212,80 @@ a
 	overflow: hidden
 	position: relative
 	img
-		height: 100%
-.data
-	position: absolute
-	bottom: 0
-	right: 0
-	display: inline-block
-	height: 84px
-	width: 82px
-	background: #fff	
-	+box
-	padding-top: 19px
-	text-align: center
-	&:before
-		position: absolute
-		content: ""
-		top: -5px
-		right: 32px
-		display: inline-block
-		width: 0px
-		height: 0px
-		border-style: solid
-		border-width: 0 7.5px 5px 7.5px
-		border-color: transparent transparent #fff	
-.data__number
-	color: #ef2e24 
-	font-size: 33px
-	line-height: 33px
-.data__month	
-	font-size: 10px
-	line-height: 14px	
+		height: 100%	
 .main__right
 	float: right
 	display: inline-block	
-	background: #aaa//KILL
-	height: 500px//KILL
 	width: 310px
 .main__footer
-	text-align: center	
+	text-align: center
+	background: url(../img/dot.png) repeat-x 0px 11px
+	.link5
+		background: #FFF 
+		position: relative
+		padding: 0 31px 0 29px
+		&:hover
+			&:before
+				background: url(../img/icons/i-tick_h.png)
+			&:after
+				background: url(../img/icons/i-tick_h.png)	
+		&:before, &:after
+			content: ""
+			position: absolute
+			height: 6px
+			width: 9px
+			background: url(../img/icons/i-tick.png)
+			top: 2px				
+		&:before
+			left: 3px
+		&:after
+			right: 1px	
+.banner	
+	border-bottom: 2px solid #e4e4e4 
+	padding-bottom: 2px	
+.banner__block
+	position: relative
+	overflow: hidden
+	width: 310px
+	height: 132px
+	background: #A6ACB8 
+	margin-bottom: 9px
+	img	
+		height: 100%
+.banner__text
+	position: absolute
+	top: 56px
+	left: 110px
+	color: #fff
+	font-weight: bold
+	font-size: 22px
+	line-height: 22px
+	&:after, &:before
+		position: absolute
+		content: ""
+		left: 23px
+		height: 2px
+		width: 47px
+		background: #fff
+		+opacity(0.6) 
+	&:after
+		top: -14px	
+	&:before
+		bottom: -13px	
+.event
+	.link2
+		text-align: center
+		margin: 27px 0 29px 0
+		display: block 
+
+
+ 
+
 		
 /*-----footer----------------------------------------*/
 .footer
 	background: #353C44 
+	+clr
 .footer-in
 	background: #353C44
 	margin: 0 auto
@@ -421,10 +483,13 @@ a
 
 .link4
 	font-size: 12px
-	line-height: 12px
+	line-height: 15px
 	&:hover
 		.i-link
 			+s(i-link_h)
+.link5
+	font-size: 11px
+	line-height: 11px			
 
 .link-blue
 	color: #0068b3
@@ -433,6 +498,44 @@ a
 	&:hover
 		color: #218EDD
 /*-----H---------------------------------------*/
-.h2			
-		
+.h2	
+/*-----data------------------------------------*/		
+.data		
+	.data__number, .data__month
+		display: inline-block	
+		font-size: 10px
+		line-height: 10px
+	.data__number	
+		color: #ef2e24 
+	.data__month
+.data-big
+	position: absolute
+	bottom: 0
+	right: 0
+	display: inline-block
+	height: 84px
+	width: 82px
+	background: #fff	
+	+box
+	padding-top: 19px
+	text-align: center
+	&:before
+		position: absolute
+		content: ""
+		top: -5px
+		right: 32px
+		display: inline-block
+		width: 0px
+		height: 0px
+		border-style: solid
+		border-width: 0 7.5px 5px 7.5px
+		border-color: transparent transparent #fff	
+	.data__number
+		font-size: 33px
+		line-height: 33px
+		display: block
+	.data__month	
+		font-size: 10px
+		line-height: 14px
+		display: block
 	

@@ -12,9 +12,9 @@
 	<script src="js/cycle.js"></script>	
 </head>
 <body onload="clickMenu('menu')">
-	<div class="wrap">
-		<!--BEGIN header-->
-		<header class="header-in">
+	<!--BEGIN header-->
+	<header class="header">
+		<div class="header-in">
 			<div class="header__left">
 				<a href="#" class="logo">Российский Книжный Союз</a>
 			</div>
@@ -33,9 +33,9 @@
 					</div>	
 				</div>	
 			</div>
-		</header>
-		<!--/.header-->
-	</div>
+		</div>
+	</header>
+	<!--/.header-->
 	<div class="wrap">	
 		<!--BEGIN nav-->
 		<ul id="menu" class="nav">
@@ -183,68 +183,122 @@
 		</div>
 	</div>
 	<!-- / .slider -->
-	<div class="wrap">
-		<!--BEGIN main-->	
-		<div class="main">
+	<!--BEGIN main-->		
+	<div class="main">
+		<div class="main-in">
 			<div class="main__left">
-				<div class="topper">
+				<div class="main__topper">
 					<a href="#" class="link link2">Последние новости</a>
 					<a href="#" class="link link4"><i class="ico i-link"></i> Архив новостей</a>
 				</div>
-				<div class="block">
-					<div class="img">
-						<img src="img/slide1.png" alt="#">
-						<div class="data">
-							<div class="data__number">25</div>
-							<div class="data__month">ОКТЯБРЯ</div>
+				<div class="main__block">
+					<div class="block">
+						<div class="img">
+							<img src="img/slide1.png" alt="#">
+							<div class="data data-big">
+								<div class="data__number">25</div>
+								<div class="data__month">ОКТЯБРЯ</div>
+							</div>
 						</div>
-					</div>
-					<div class="block__right">
-						<a href="#" class="link link-blue">ИННОВАЦИИ</a>
-						<a href="#" class="link link3">Российский книжный союз принял учебники и учебную литературу на экспертизу</a>
-						<div class="text">Все учебники, по которым учатся российские школьники, будут проходить не только научную и педагогическую, но и общественную экспертизу все учебники
+						<div class="block__right">
+							<a href="#" class="link link-blue">ИННОВАЦИИ</a>
+							<a href="#" class="link link3">Российский книжный союз принял учебники и учебную литературу на экспертизу</a>
+							<div class="text">Все учебники, по которым учатся российские школьники, будут проходить не только научную и педагогическую, но и общественную экспертизу все учебники
+							</div>
+						</div>
+					</div>	
+					<div class="block">
+						<div class="img">
+							<img src="img/slide2.png" alt="#">
+							<div class="data data-big">
+								<div class="data__number">26</div>
+								<div class="data__month">ЯНВАРЯ</div>
+							</div>
+						</div>
+						<div class="block__right">
+							<a href="#" class="link link-blue">ДЕЯТЕЛЬНОСТЬ</a>
+							<a href="#" class="link link3">Создан Объединенный совет по проведению общественной экспертизы</a>
+							<div class="text">15 ноября четыре общественные организации объединили свои усилия для проведения экспертизы учебников и учебной литературы.
+							</div>
+						</div>
+					</div>	
+					<div class="block">
+						<div class="img">
+							<img src="img/slide3.jpg" alt="#">
+							<div class="data data-big">
+								<div class="data__number">21</div>
+								<div class="data__month">ДЕКАБРЯ</div>
+							</div>
+						</div>
+						<div class="block__right">
+							<a href="#" class="link link-blue">ЗАСЕДАНИЯ</a>
+							<a href="#" class="link link3">Отраслевые предложения в резолюцию литературного собрания</a>
+							<div class="text">21 ноября в Москве,в Российском университете Дружбы народов,по инициативе администрации президента прошло первое Российское Литературное Собрание.
+							</div>
 						</div>
 					</div>
 				</div>	
-				<div class="block">
-					<div class="img">
-						<img src="img/slide2.png" alt="#">
-						<div class="data">
-							<div class="data__number">26</div>
-							<div class="data__month">ЯНВАРЯ</div>
-						</div>
-					</div>
-					<div class="block__right">
-						<a href="#" class="link link-blue">ДЕЯТЕЛЬНОСТЬ</a>
-						<a href="#" class="link link3">Создан Объединенный совет по проведению общественной экспертизы</a>
-						<div class="text">15 ноября четыре общественные организации объединили свои усилия для проведения экспертизы учебников и учебной литературы.
-						</div>
-					</div>
-				</div>	
-				<div class="block">
-					<div class="img">
-						<img src="img/slide3.jpg" alt="#">
-						<div class="data">
-							<div class="data__number">21</div>
-							<div class="data__month">ДЕКАБРЯ</div>
-						</div>
-					</div>
-					<div class="block__right">
-						<a href="#" class="link link-blue">ЗАСЕДАНИЯ</a>
-						<a href="#" class="link link4">Отраслевые предложения в резолюцию литературного собрания</a>
-						<div class="text">21 ноября в Москве,в Российском университете Дружбы народов,по инициативе администрации президента прошло первое Российское Литературное Собрание.
-						</div>
-					</div>
-				</div>
 				<div class="main__footer">
-					<a href="#" class="link link4">ПОКАЗАТЬ ЕЩЕ НОВОСТИ</a>	
+					<a href="#" class="link link5">ПОКАЗАТЬ ЕЩЕ НОВОСТИ</a>	
 				</div>								
 			</div>
-			<div class="main__right">right</div>
+			<div class="main__right">
+				<div class="banner">
+					<div class="banner__block">
+						<img src="img/banner1.png" alt="#">
+						<div class="banner__text">БАННЕР</div>
+					</div>
+					<div class="banner__block">
+						<img src="img/banner2.png" alt="#">
+						<div class="banner__text">БАННЕР</div>
+					</div>
+				</div>	
+				<div class="event">
+					<a href="#" class="link link2">События</a>
+					<div class="block block-mini">
+						<div class="img">
+							<img src="img/slide4.jpg" alt="#">
+						</div>
+						<div class="block__right">
+							<a href="#" class="link link4">Российский книжный союз принял учебники и учебную литературу на экспертизу</a>
+							<div class="data">
+								<div class="data__number">25</div>
+								<div class="data__month">ОКТЯБРЯ</div>
+							</div>
+						</div>
+					</div>	
+					<div class="block block-mini">
+						<div class="img">
+							<img src="img/slide3.jpg" alt="#">
+						</div>
+						<div class="block__right">
+							<a href="#" class="link link4">Международный книжный салон в Санкт-Петербурге</a>
+							<div class="data">
+								<div class="data__number">26</div>
+								<div class="data__month">СЕНТЯБРЯ</div>
+							</div>
+						</div>
+					</div>
+					<div class="block block-mini">
+						<div class="img">
+							<img src="img/slide2.png" alt="#">
+						</div>
+						<div class="block__right">
+							<a href="#" class="link link4">Выездное заседание правления в Дагестане</a>
+							<div class="data">
+								<div class="data__number">30</div>
+								<div class="data__month">АВГУСТА</div>
+							</div>
+						</div>
+					</div>															
+				</div>			
+			</div>
 		</div>
-		<!--/.main-->
-	</div>		
-
+	</div>
+	<!--/.main-->	
+	<!--BEGIN book-->
+		<div class="book">book</div>	
+	<!--/.book-->		
 	<!--BEGIN footer-->		
 	<footer class="footer">
 		<div class="footer-in">
