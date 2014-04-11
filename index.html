@@ -7,338 +7,386 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/app.js"></script>
-	<script src="js/common.js"></script>	
 	<script src="js/jquery.js"></script>
 	<script src="js/cycle.js"></script>	
+	<script type="text/javascript" src="js/jcarouse.js"></script>
+	<script src="js/common.js"></script>	
 </head>
 <body onload="clickMenu('menu')">
 	<!--BEGIN header-->
-	<header class="header">
-		<div class="header-in">
-			<div class="header__left">
-				<a href="#" class="logo">Российский Книжный Союз</a>
-			</div>
-			<div class="header__right">
-				<div class="header__top">
-					<ul class="lang">
-						<li><a href="#">EN</a></li>
-						<li><a href="#" class="is-active">РУ</a></li>
-					</ul>
-					<div class="official"><i class="ico i-pegas"></i>Официальный сайт РКС</div>
+		<header class="header">
+			<div class="header-in">
+				<div class="header__left">
+					<a href="#" class="logo">Российский Книжный Союз</a>
 				</div>
-				<div class="header__bottom">
-					<div class="search">
-						<input class="search__input" type="search" placeholder="Поиск">
-						<i class="ico i-search"></i>
+				<div class="header__right">
+					<div class="header__top">
+						<ul class="lang">
+							<li><a href="#">EN</a></li>
+							<li><a href="#" class="is-active">РУ</a></li>
+						</ul>
+						<div class="official"><i class="ico i-pegas"></i>Официальный сайт РКС</div>
+					</div>
+					<div class="header__bottom">
+						<div class="search">
+							<input class="search__input" type="search" placeholder="Поиск">
+							<i class="ico i-search"></i>
+						</div>	
 					</div>	
-				</div>	
+				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 	<!--/.header-->
-	<div class="wrap">	
-		<!--BEGIN nav-->
-		<ul id="menu" class="nav">
-			<li class="nav__item">О нас
-				<ul>
-					<li class="nav__item-unit">
-						<a href="#">Уставные документы</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Состав членов РКС</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Органы управления</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Структура РКС</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Реквизиты</a>
-					</li>
-				</ul>
-			</li>
-			<li class="nav__item">Вступление в РКС
-				<ul>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-				</ul>
-			</li>
-			<li class="nav__item">Мероприятия РКС
-				<ul>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-				</ul>
-			</li>
-			<li class="nav__item">Проекты РКС
-				<ul>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-				</ul>
-			</li>
-			<li class="nav__item">Партнеры
-				<ul>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-				</ul>
-			</li>		
-			<li class="nav__item">Контакты
-				<ul>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-					<li class="nav__item-unit">
-						<a href="#">Подпункт</a>
-					</li>
-				</ul>
-			</li>					
-		</ul>
-		<!--/.nav-->
-	</div>	
+	<!--BEGIN nav-->	
+		<div class="nav">	
+			<ul id="menu" class="nav-in">
+				<li class="nav__item">О нас
+					<ul>
+						<li class="nav__item-unit">
+							<a href="#">Уставные документы</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Состав членов РКС</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Органы управления</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Структура РКС</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Реквизиты</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav__item">Вступление в РКС
+					<ul>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav__item">Мероприятия РКС
+					<ul>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav__item">Проекты РКС
+					<ul>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav__item">Партнеры
+					<ul>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+					</ul>
+				</li>		
+				<li class="nav__item">Контакты
+					<ul>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+						<li class="nav__item-unit">
+							<a href="#">Подпункт</a>
+						</li>
+					</ul>
+				</li>					
+			</ul>
+		</div>	
+	<!--/.nav-->	
 	<!-- BEGIN slider -->
-	<div class="slider">
-		<div class="slider-i">
-			<div class="cycle-slideshow"
-			data-cycle-slides="> .slider__item"
-			data-cycle-pager=".slider__pager"
-			data-cycle-prev=".slider__prev"
-			data-cycle-next=".slider__next"
-			data-pause-on-hover="true"
-			>
-				<div class="slider__item slider__item-1">
-					<div class="slider__content">
-						<i class="ico i-book"></i>
-						<a href="#" class="slider__content-title">Региональная программа поддержки<br> и развития чтения</a>
-						<div class="slider__content-text">Российский книжный союз<br> начинает принимать учебники и учебную литературу на общественную экспертизу</div>
+		<div class="slider">
+			<div class="slider-i">
+				<div class="cycle-slideshow"
+				data-cycle-slides="> .slider__item"
+				data-cycle-pager=".slider__pager"
+				data-cycle-prev=".slider__prev"
+				data-cycle-next=".slider__next"
+				data-pause-on-hover="true"
+				>
+					<div class="slider__item slider__item-1">
+						<div class="slider__content">
+							<i class="ico i-book"></i>
+							<a href="#" class="slider__content-title">Региональная программа поддержки<br> и развития чтения</a>
+							<div class="slider__content-text">Российский книжный союз<br> начинает принимать учебники и учебную литературу на общественную экспертизу</div>
+						</div>
+					</div>
+					<div class="slider__item slider__item-2">
+						<div class="slider__content">
+							<i class="ico i-book"></i>
+							<div class="slider__content-title">Методы, используемые для печати</div>
+							<div class="slider__content-text">Страницы последовательно напечатываются на рулонной бумаге, которая впоследствии разделяется на отдельные листы, таким образом, что в итоге книга сразу будет собрана в правильном порядке. </div>
+						</div>
+					</div>
+					<div class="slider__item slider__item-3">
+						<div class="slider__content">
+							<i class="ico i-book"></i>
+							<div class="slider__content-title">Современная печать</div>
+							<div class="slider__content-text">В зависимости от конкретного типа книги применяется бумага определённого качества; наиболее распространённой разновидностью является мелованная бумага того или иного сорта.</div>
+						</div>
+					</div>
+					<div class="slider__item slider__item-4">
+						<div class="slider__content">
+							<i class="ico i-book"></i>
+							<div class="slider__content-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+							<div class="slider__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, quidem, earum, eius, aliquid nostrum cupiditate necessitatibus iure laudantium maiores itaque quos maxime deserunt ratione exercitationem accusantium consequatur molestiae ad amet.</div>
+						</div>
 					</div>
 				</div>
-				<div class="slider__item slider__item-2">
-					<div class="slider__content">
-						<i class="ico i-book"></i>
-						<div class="slider__content-title">Методы, используемые для печати</div>
-						<div class="slider__content-text">Страницы последовательно напечатываются на рулонной бумаге, которая впоследствии разделяется на отдельные листы, таким образом, что в итоге книга сразу будет собрана в правильном порядке. </div>
-					</div>
-				</div>
-				<div class="slider__item slider__item-3">
-					<div class="slider__content">
-						<i class="ico i-book"></i>
-						<div class="slider__content-title">Современная печать</div>
-						<div class="slider__content-text">В зависимости от конкретного типа книги применяется бумага определённого качества; наиболее распространённой разновидностью является мелованная бумага того или иного сорта.</div>
-					</div>
-				</div>
-				<div class="slider__item slider__item-4">
-					<div class="slider__content">
-						<i class="ico i-book"></i>
-						<div class="slider__content-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
-						<div class="slider__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, quidem, earum, eius, aliquid nostrum cupiditate necessitatibus iure laudantium maiores itaque quos maxime deserunt ratione exercitationem accusantium consequatur molestiae ad amet.</div>
-					</div>
-				</div>
+				<div class="slider__pager"></div>
+				<i class="slider__prev"></i>
+				<i class="slider__next"></i>
 			</div>
-			<div class="slider__pager"></div>
-			<i class="slider__prev"></i>
-			<i class="slider__next"></i>
 		</div>
-	</div>
 	<!-- / .slider -->
 	<!--BEGIN main-->		
-	<div class="main">
-		<div class="main-in">
-			<div class="main__left">
-				<div class="main__topper">
-					<a href="#" class="link link2">Последние новости</a>
-					<a href="#" class="link link4"><i class="ico i-link"></i> Архив новостей</a>
+		<div class="main">
+			<div class="main-in">
+				<div class="main__left">
+					<div class="main__topper">
+						<a href="#" class="link h2">Последние новости</a>
+						<a href="#" class="link h5"><i class="ico i-link"></i> Архив новостей</a>
+					</div>
+					<div class="main__block">
+						<div class="block">
+							<div class="img">
+								<img src="img/slide1.png" alt="#">
+								<div class="data data-big">
+									<div class="data__number">25</div>
+									<div class="data__month">ОКТЯБРЯ</div>
+								</div>
+							</div>
+							<div class="block__right">
+								<a href="#" class="link link-blue">ИННОВАЦИИ</a>
+								<a href="#" class="link h3">Российский книжный союз принял учебники и учебную литературу на экспертизу</a>
+								<div class="text">Все учебники, по которым учатся российские школьники, будут проходить не только научную и педагогическую, но и общественную экспертизу все учебники
+								</div>
+							</div>
+						</div>	
+						<div class="block">
+							<div class="img">
+								<img src="img/slide2.png" alt="#">
+								<div class="data data-big">
+									<div class="data__number">26</div>
+									<div class="data__month">ЯНВАРЯ</div>
+								</div>
+							</div>
+							<div class="block__right">
+								<a href="#" class="link link-blue">ДЕЯТЕЛЬНОСТЬ</a>
+								<a href="#" class="link h3">Создан Объединенный совет по проведению общественной экспертизы</a>
+								<div class="text">15 ноября четыре общественные организации объединили свои усилия для проведения экспертизы учебников и учебной литературы.
+								</div>
+							</div>
+						</div>	
+						<div class="block">
+							<div class="img">
+								<img src="img/slide3.jpg" alt="#">
+								<div class="data data-big">
+									<div class="data__number">21</div>
+									<div class="data__month">ДЕКАБРЯ</div>
+								</div>
+							</div>
+							<div class="block__right">
+								<a href="#" class="link link-blue">ЗАСЕДАНИЯ</a>
+								<a href="#" class="link h3">Отраслевые предложения в резолюцию литературного собрания</a>
+								<div class="text">21 ноября в Москве,в Российском университете Дружбы народов,по инициативе администрации президента прошло первое Российское Литературное Собрание.
+								</div>
+							</div>
+						</div>
+					</div>	
+					<div class="main__footer">
+						<a href="#" class="link h6">ПОКАЗАТЬ ЕЩЕ НОВОСТИ</a>	
+					</div>								
 				</div>
-				<div class="main__block">
-					<div class="block">
-						<div class="img">
-							<img src="img/slide1.png" alt="#">
-							<div class="data data-big">
-								<div class="data__number">25</div>
-								<div class="data__month">ОКТЯБРЯ</div>
-							</div>
+				<div class="main__right">
+					<div class="banner">
+						<div class="banner__block">
+							<img src="img/banner1.png" alt="#">
+							<div class="banner__text">БАННЕР</div>
 						</div>
-						<div class="block__right">
-							<a href="#" class="link link-blue">ИННОВАЦИИ</a>
-							<a href="#" class="link link3">Российский книжный союз принял учебники и учебную литературу на экспертизу</a>
-							<div class="text">Все учебники, по которым учатся российские школьники, будут проходить не только научную и педагогическую, но и общественную экспертизу все учебники
-							</div>
+						<div class="banner__block">
+							<img src="img/banner2.png" alt="#">
+							<div class="banner__text">БАННЕР</div>
 						</div>
 					</div>	
-					<div class="block">
-						<div class="img">
-							<img src="img/slide2.png" alt="#">
-							<div class="data data-big">
-								<div class="data__number">26</div>
-								<div class="data__month">ЯНВАРЯ</div>
+					<div class="event">
+						<a href="#" class="link h2">События</a>
+						<div class="block block-mini">
+							<div class="img">
+								<img src="img/slide4.jpg" alt="#">
+							</div>
+							<div class="block__right">
+								<a href="#" class="link h5">Российский книжный союз принял учебники и учебную литературу на экспертизу</a>
+								<div class="data">
+									<div class="data__number">25</div>
+									<div class="data__month">ОКТЯБРЯ</div>
+								</div>
+							</div>
+						</div>	
+						<div class="block block-mini">
+							<div class="img">
+								<img src="img/slide3.jpg" alt="#">
+							</div>
+							<div class="block__right">
+								<a href="#" class="link h5">Международный книжный салон в Санкт-Петербурге</a>
+								<div class="data">
+									<div class="data__number">26</div>
+									<div class="data__month">СЕНТЯБРЯ</div>
+								</div>
 							</div>
 						</div>
-						<div class="block__right">
-							<a href="#" class="link link-blue">ДЕЯТЕЛЬНОСТЬ</a>
-							<a href="#" class="link link3">Создан Объединенный совет по проведению общественной экспертизы</a>
-							<div class="text">15 ноября четыре общественные организации объединили свои усилия для проведения экспертизы учебников и учебной литературы.
+						<div class="block block-mini">
+							<div class="img">
+								<img src="img/slide2.png" alt="#">
 							</div>
-						</div>
-					</div>	
-					<div class="block">
-						<div class="img">
-							<img src="img/slide3.jpg" alt="#">
-							<div class="data data-big">
-								<div class="data__number">21</div>
-								<div class="data__month">ДЕКАБРЯ</div>
+							<div class="block__right">
+								<a href="#" class="link h5">Выездное заседание правления в Дагестане</a>
+								<div class="data">
+									<div class="data__number">30</div>
+									<div class="data__month">АВГУСТА</div>
+								</div>
 							</div>
-						</div>
-						<div class="block__right">
-							<a href="#" class="link link-blue">ЗАСЕДАНИЯ</a>
-							<a href="#" class="link link3">Отраслевые предложения в резолюцию литературного собрания</a>
-							<div class="text">21 ноября в Москве,в Российском университете Дружбы народов,по инициативе администрации президента прошло первое Российское Литературное Собрание.
-							</div>
-						</div>
-					</div>
-				</div>	
-				<div class="main__footer">
-					<a href="#" class="link link5">ПОКАЗАТЬ ЕЩЕ НОВОСТИ</a>	
-				</div>								
-			</div>
-			<div class="main__right">
-				<div class="banner">
-					<div class="banner__block">
-						<img src="img/banner1.png" alt="#">
-						<div class="banner__text">БАННЕР</div>
-					</div>
-					<div class="banner__block">
-						<img src="img/banner2.png" alt="#">
-						<div class="banner__text">БАННЕР</div>
-					</div>
-				</div>	
-				<div class="event">
-					<a href="#" class="link link2">События</a>
-					<div class="block block-mini">
-						<div class="img">
-							<img src="img/slide4.jpg" alt="#">
-						</div>
-						<div class="block__right">
-							<a href="#" class="link link4">Российский книжный союз принял учебники и учебную литературу на экспертизу</a>
-							<div class="data">
-								<div class="data__number">25</div>
-								<div class="data__month">ОКТЯБРЯ</div>
-							</div>
-						</div>
-					</div>	
-					<div class="block block-mini">
-						<div class="img">
-							<img src="img/slide3.jpg" alt="#">
-						</div>
-						<div class="block__right">
-							<a href="#" class="link link4">Международный книжный салон в Санкт-Петербурге</a>
-							<div class="data">
-								<div class="data__number">26</div>
-								<div class="data__month">СЕНТЯБРЯ</div>
-							</div>
-						</div>
-					</div>
-					<div class="block block-mini">
-						<div class="img">
-							<img src="img/slide2.png" alt="#">
-						</div>
-						<div class="block__right">
-							<a href="#" class="link link4">Выездное заседание правления в Дагестане</a>
-							<div class="data">
-								<div class="data__number">30</div>
-								<div class="data__month">АВГУСТА</div>
-							</div>
-						</div>
-					</div>															
-				</div>			
+						</div>															
+					</div>			
+				</div>
 			</div>
 		</div>
-	</div>
 	<!--/.main-->	
-	<!--BEGIN book-->
-		<div class="book">book</div>	
-	<!--/.book-->		
-	<!--BEGIN footer-->		
-	<footer class="footer">
-		<div class="footer-in">
-			<div class="footer__left">
-				<a href="#" class="footer__logo"></a>
-				<div class="footer__text">Сайт создан при финансовой поддержке Федерального агентства по печати и массовым коммуникациям РФ. </div>
-			</div>
-			<div class="footer__right">
-				<div class="develop">
-					<div class="develop__text">Разработка</div>
-					<a class="develop__logo" href="#"></a>
+	<!--BEGIN slider-mini-->
+		<div class="slider-mini">
+			<div class="slider-mini_in">
+				<div class="slider-mini__title">
+					<a href="#" class="link h2">Книжные новинки</a>
 				</div>
-			</div>
-			<div class="footer__center">
-				<ul class="footer__links">
-					<li class="footer__item">
+				<i class="ico slider-mini__prev"></i>
+					<div class="slider-mini__gallery">
 						<ul>
-							<li class="footer__item-unit"><a href="#">КАРТА САЙТА</a></li>
-							<li class="footer__item-unit"><a href="#">О НАС</a></li>
-							<li class="footer__item-unit"><a href="#">КОНТАКТЫ</a></li>							
+							<li class="slider-mini__item">
+								<a href="#" class="slider-mini__img">
+									<img src="img/book1.png" alt="#" />
+								</a>	
+								<a href="#" class="link h4">Экономическая теория</a>
+								<div class="text">Лучшее описание для этой книги - шедевр, возможность почувствовать себя птицей</div>
+							</li>
+							<li class="slider-mini__item">
+								<a href="#" class="slider-mini__img">		
+									<img src="img/book2.png" alt="#" />
+								</a>
+								<a href="#" class="link h4">Руководство для корпоративного Макиавелли</a>
+								<div class="text">Яркое и своеобразное описание замкнутого социума, его характерных особенностей </div>	
+							</li>
+							<li class="slider-mini__item">
+								<a href="#" class="slider-mini__img">
+									<img src="img/book3.png" alt="#" />
+								</a>
+								<a href="#" class="link h4">Дом, в котором...</a>
+								<div class="text">Яркое и своеобразное описание замкнутого социума, его характерных особенностей </div>	
+							</li>
+							<li class="slider-mini__item">
+								<a href="#" class="slider-mini__img">
+									<img src="img/book4.png" alt="#" />
+								</a>
+								<a href="#" class="link h4">Птица, поющая симфонии</a>
+								<div class="text">Лучшее описание для этой книги - шедевр, возможность почувствовать себя птицей</div>	
+							</li>
+							<li class="slider-mini__item">
+								<a href="#" class="slider-mini__img">
+									<img src="img/book5.png" alt="#" />
+								</a>
+								<a href="#" class="link h4">Сказки не про людей</a>
+								<div class="text">Это калейдоскоп улыбок: мягких, скептических, иронических, саркастических - любых</div>	
+							</li>				
 						</ul>
-					</li>
-					<li class="footer__item">
-						<ul>
-							<li class="footer__item-unit"><a href="#">МАТЕРИАЛЫ</a></li>
-							<li class="footer__item-unit"><a href="#">СОСТАВ РКС</a></li>
-							<li class="footer__item-unit"><a href="#">ЧЛЕНЫ РКС</a></li>							
-						</ul>
-					</li>
-					<li class="footer__item">
-						<ul>
-							<li class="footer__item-unit"><a href="#">ВСТУПЛЕНИЕ В РКС</a></li>
-							<li class="footer__item-unit"><a href="#">НОВОСТИ</a></li>
-							<li class="footer__item-unit"><a href="#">МЕРОПРИЯТИЯ</a></li>							
-						</ul>
-					</li>										
-				</ul>
+					</div>
+				<i class="slider-mini__next"></i>
 			</div>
 		</div>
-	</footer>
+	<!--/.slider-mini-->
+	<!--BEGIN footer-->		
+		<footer class="footer">
+			<div class="footer-in">
+				<div class="footer__left">
+					<a href="#" class="footer__logo"></a>
+					<div class="footer__text">Сайт создан при финансовой поддержке Федерального агентства по печати и массовым коммуникациям РФ. </div>
+				</div>
+				<div class="footer__right">
+					<div class="develop">
+						<div class="develop__text">Разработка</div>
+						<a class="develop__logo" href="#"></a>
+					</div>
+				</div>
+				<div class="footer__center">
+					<ul class="footer__links">
+						<li class="footer__item">
+							<ul>
+								<li class="footer__item-unit"><a href="#">КАРТА САЙТА</a></li>
+								<li class="footer__item-unit"><a href="#">О НАС</a></li>
+								<li class="footer__item-unit"><a href="#">КОНТАКТЫ</a></li>							
+							</ul>
+						</li>
+						<li class="footer__item">
+							<ul>
+								<li class="footer__item-unit"><a href="#">МАТЕРИАЛЫ</a></li>
+								<li class="footer__item-unit"><a href="#">СОСТАВ РКС</a></li>
+								<li class="footer__item-unit"><a href="#">ЧЛЕНЫ РКС</a></li>							
+							</ul>
+						</li>
+						<li class="footer__item">
+							<ul>
+								<li class="footer__item-unit"><a href="#">ВСТУПЛЕНИЕ В РКС</a></li>
+								<li class="footer__item-unit"><a href="#">НОВОСТИ</a></li>
+								<li class="footer__item-unit"><a href="#">МЕРОПРИЯТИЯ</a></li>							
+							</ul>
+						</li>										
+					</ul>
+				</div>
+			</div>
+		</footer>
 	<!--/.nav-->
 </body>
 </html>
