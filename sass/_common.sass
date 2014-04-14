@@ -81,63 +81,68 @@ a
 	+box-shadow (inset 0 2px 0 0 $border)
 	+box
 	padding-left: 90px
-	ul
-		position: absolute
-		left: -5999px
-		width: 128px
-	.click
-		background: #2a2a2a
-		color: #FFF 
-		+transition(0.2s)				
-		ul
-			left: 0
-			top: 55px 
-			+transition(0.2s)					
-		&:hover
-			background: #2a2a2a
-			color: #FFF	
-			z-index: 999
 .nav__item
 	+transition(0.3s)									
 	float: left
 	background: transparent
 	position: relative
+	display: inline-block
+	text-align: left
+	&:hover
+		background: transparent
+		color: $text-hover 
+		.nav__link//a
+			text-decoration: none
+			position: relative
+			z-index: 101		
+		.nav__second
+			display: block
+			z-index: 101
+			position: absolute
+.is-dropdown	
+	&:hover
+		background: #2a2a2a
+		.nav__link
+			color: #FFF 
+.nav__item-unit	
+	+transition(0.3s)							
+	border-top: 1px solid #3f3f3f 
+	width: 210px	
+	+box
+	&:first-child
+		border-top: 1px solid transparent 	
+.nav__item-link	
+	background: #2a2a2a
 	display: block
+	color: #a8abad
+	font-size: 12px
+	line-height: 12px
+	width: 210px
+	padding: 15px 0px 15px 21px 
+	text-decoration: none
+	text-align: left
+	+box
+	&:hover
+		background: #3c3c3c
+		color: #a8abad		
+	&:active
+		background: #ef2e24
+		color: #FBD5D4 			
+.nav__second			
+	display: none	
+	position: absolute	
+	top: 54px
+	left: 0px
+	width: 128px	
+.nav__link//a	
+	display: inline-block
 	color: #313131
+	text-decoration: none
 	font-size: 14px
 	line-height: 20px
 	padding: 19px 26px 16px 21px 
-	text-decoration: none
-	text-align: left
-	cursor: pointer
 	&:hover
-		background: transparent
-		color: $text-hover 	
-.nav__item-unit	
-	+transition(0.3s)							
-	background: #2a2a2a
-	width: 210px
-	border-top: 1px solid #3f3f3f 
-	padding: 15px 0px 15px 21px 
-	+box
-	&:first-child
-		border-top: 1px solid transparent
-	&:hover
-		background: #3c3c3c
-	&:active
-		background: #ef2e24
-		color: #FBD5D4 	 	
-	a
-		display: block
-		color: #a8abad
-		font-size: 12px
-		line-height: 12px
-		width: 210px
-		text-decoration: none
-		text-align: left
-		cursor: pointer
-		&:hover
-			color: #a8abad		
+		color: $text-hover 
 /*-----main----------------------------------------*/
 .main
 	display: block
