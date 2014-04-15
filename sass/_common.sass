@@ -8,6 +8,37 @@ a
 .text
 	font-size: 12px
 	line-height: 17px 
+.title
+	padding: 33px 0px 26px 0px 
+	.h2
+		margin-right: 25px
+		vertical-align: top
+	.h5
+		vertical-align: top
+		line-height: 31px	
+.bottom
+	text-align: center
+	background: url(../img/dot.png) repeat-x 0px 11px
+	.h6
+		background: #FFF 
+		position: relative
+		padding: 0 31px 0 29px
+		&:hover
+			&:before
+				background: url(../img/icons/i-tick_h.png)
+			&:after
+				background: url(../img/icons/i-tick_h.png)	
+		&:before, &:after
+			content: ""
+			position: absolute
+			height: 6px
+			width: 9px
+			background: url(../img/icons/i-tick.png)
+			top: 2px				
+		&:before
+			left: 3px
+		&:after
+			right: 1px			
 /*-----header----------------------------------------*/
 .header		
 	display: block
@@ -154,24 +185,15 @@ a
 	padding-bottom: 19px
 	+clr
 	border-bottom: 2px solid #e4e4e4 
+	.title
+		border-top: 2px solid #e4e4e4 
+		padding: 27px 0px 26px 
 .main__left
 	float: left
 	display: inline-block
 	width: 630px
-.main__topper
-	border-top: 2px solid #e4e4e4 
-	padding-top: 27px
-	margin-bottom: 27px
-	.h2
-		margin-right: 25px
-		vertical-align: top
-	.h5
-		vertical-align: top
-		line-height: 31px
-		.i-link
-			margin-right: 10px	
 .main__block
-	margin-bottom: 22px			
+	margin-bottom: 20px			
 .block
 	+box-shadow (inset 0px 1px 0px 0px #e4e4e4)
 	+clr
@@ -201,7 +223,7 @@ a
 .block__right
 	float: right
 	width: 412px
-	padding-top: 22px
+	padding-top: 23px
 	padding-right: 25px
 	+box
 	.link-blue
@@ -210,7 +232,7 @@ a
 		margin-bottom: 19px
 .img
 	display: inline-block
-	height: 187px
+	height: 188px
 	width: 191px
 	background: #e4e4e4
 	overflow: hidden
@@ -220,30 +242,7 @@ a
 .main__right
 	float: right
 	display: inline-block	
-	width: 310px
-.main__footer
-	text-align: center
-	background: url(../img/dot.png) repeat-x 0px 11px
-	.h6
-		background: #FFF 
-		position: relative
-		padding: 0 31px 0 29px
-		&:hover
-			&:before
-				background: url(../img/icons/i-tick_h.png)
-			&:after
-				background: url(../img/icons/i-tick_h.png)	
-		&:before, &:after
-			content: ""
-			position: absolute
-			height: 6px
-			width: 9px
-			background: url(../img/icons/i-tick.png)
-			top: 2px				
-		&:before
-			left: 3px
-		&:after
-			right: 1px	
+	width: 310px	
 .banner	
 	border-bottom: 2px solid #e4e4e4 
 	padding-bottom: 2px	
@@ -461,6 +460,7 @@ a
 .i-book
 	+s(i-book)
 .i-link
+	margin-right: 10px
 	+s(i-link)
 	vertical-align: middle 	
 /*-----link/h------------------------------------*/
@@ -507,6 +507,8 @@ a
 	line-height: 10px
 .data__number	
 	color: #ef2e24 
+.data
+
 .data-big
 	position: absolute
 	bottom: 0
@@ -537,6 +539,7 @@ a
 		font-size: 10px
 		line-height: 14px
 		display: block
+	
 /*-----slider-mini---------------------*/
 .slider-mini_in
 	margin: 0 auto
@@ -586,4 +589,47 @@ a
 	margin: 0 17px
 	.h4
 		margin-bottom: 9px	
+/*-----topper--------------------------------------------------*/
+.topper
+	height: 39px
+	background: #75787c url(../img/slide1.png)	
+	+cover
+/*-----newlist------------------------------------------------*/
+.newlist
+	margin-bottom: 45px
+	.block
+		margin-bottom: 30px
+		.img
+			height: 168px
+			width: 168px
+			img
+		.data
+			height: 82px
+		.block__right
+			width: 275px
+			padding: 21px 15px 0 0 
+		.link-blue
+			margin-bottom: 8px 	
+		.h3
+			line-height: 17px
+			font-size: 14px
+			margin-bottom: 11px
+						
+
+			
+.newlist-in
+	margin: 0 auto 
+	width: 950px 
+.newlist__container
+	+clr	
+.newlist__left
+	float: left
+	width: 469px
+.newlist__right
+	float: right
+	width: 469px
+	
+
+
+
 				
