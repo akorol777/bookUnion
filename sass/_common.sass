@@ -76,7 +76,12 @@ a
 		width: 12px
 		background: url(../img/icons/i-next.png)
 		top: -3px				
-		right: 0px	
+		right: 0px
+.line
+	height: 3px
+	width: 16px
+	background: #cbcbcb
+	margin-bottom: 27px 			
 /*-----header----------------------------------------*/
 .header		
 	display: block
@@ -540,7 +545,6 @@ a
 		font-size: 10px
 		line-height: 14px
 		display: block
-	
 /*-----slider-mini---------------------*/
 .slider-mini_in
 	margin: 0 auto
@@ -643,7 +647,16 @@ a
 	padding: 17px 0 15px 
 .social
 	padding: 9px 0 48px 
-.simplenews__left-news			
+.simplenews__left-news	
+/*-----simpletext-----------------------*/
+.simpletext
+	.block-big
+		border-bottom: none
+		+box-shadow (none)
+		+clr	
+		margin-bottom: 9px 	
+	.simplenews-in
+		padding-bottom: 40px	
 /*-----label----------------------------*/
 .label
 	display: inline-block
@@ -708,6 +721,13 @@ a
 		line-height: 19px 
 		p
 			margin-bottom: 19px
+	.block-mini
+		margin-bottom: 48px 
+		+box
+		height: 110px
+		.img
+			height: 110px
+			width: 110px			
 .block-small
 	margin-bottom: 30px
 	.img
@@ -742,7 +762,12 @@ a
 		height: 84px
 	.block__right
 		width: 100%
-		padding: 0px		
+		padding: 0px
+.block-gray
+	background: #f6f6f6
+	.img
+		&:before
+			border-color: transparent #f6f6f6 transparent transparent				
 .block__right
 	float: right
 	width: 412px
@@ -752,7 +777,23 @@ a
 	.link-blue
 		margin-bottom: 7px
 	.h3
-		margin-bottom: 19px		
+		margin-bottom: 19px	
+.block__left
+	float: left
+	width: 309px
+	margin: 5px 32px 25px 0 
+	.img
+		height: 209px
+		margin: 0
+		img
+			height: 100%
+.block__left-title
+	border-top: 2px solid #d93533 
+	margin-top: 2px	
+	padding: 23px 0 23px
+	.h2
+		font-size: 22px
+		line-height: 22px
 .img
 	display: inline-block
 	height: 188px
@@ -761,8 +802,4 @@ a
 	overflow: hidden
 	position: relative
 	img
-		height: 100%		
-
-
-
-				
+		height: 100%						
